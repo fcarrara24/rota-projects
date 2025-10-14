@@ -46,6 +46,7 @@ export class Header {
   
       // Navigation
       const nav = document.createElement('nav');
+      nav.id = 'nav-container'
       nav.className = 'ml-10 flex space-x-4 items-center';
       
       this.sections.forEach(section => {
