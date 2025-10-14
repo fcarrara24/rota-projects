@@ -11,7 +11,7 @@ const Home = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-          Lamierificio Rota
+          Lavorazioni Meccaniche Rota
         </h1>
         <p className="text-xl md:text-2xl text-gray-200 mb-12 font-light">
           Lavorazioni meccaniche di precisione

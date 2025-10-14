@@ -7,7 +7,6 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-gray-300 text-sm">
             <p>&copy; 2024 LMR di Rota Stefano. Tutti i diritti riservati.</p>
-            <p className="mt-1">P.IVA: 01234567890</p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -39,7 +38,7 @@ const Footer = () => {
 
         <div className="mt-6 pt-6 border-t border-white/20 text-center">
           <p className="text-gray-400 text-xs">
-            Lamierificio specializzato in lavorazioni meccaniche di precisione | Tornitura e Fresatura CNC
+            Azienda specializzata in lavorazioni meccaniche di precisione | Tornitura e Fresatura CNC
           </p>
         </div>
       </div>
