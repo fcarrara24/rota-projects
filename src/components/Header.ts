@@ -29,7 +29,8 @@ export class Header {
   
       // Create container
       const container = document.createElement('div');
-      container.className = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center';
+      container.id = 'header-container';
+      container.className = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8';
   
       // Logo
       const logoContainer = document.createElement('div');

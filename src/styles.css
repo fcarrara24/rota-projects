@@ -63,6 +63,24 @@ html {
   height: 100%;
 }
 
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#nav-container a {
+  color: var(--text-light);
+  padding-left: 10px;
+}
+
 body {
   font-family: var(--font-sans);
   line-height: 1.6;
