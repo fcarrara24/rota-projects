@@ -1,13 +1,16 @@
 // Main entry point for the application
 import './styles.css';
-
-// Import your components here
-// Example: import { MyComponent } from './components/MyComponent';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Services } from './components/Services';
+import { Materials } from './components/Materials';
+import { Machines } from './components/Machines';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 
 function initApp() {
   console.log('Initializing application...');
-  
-  // Get the app container
   const app = document.getElementById('app');
   if (!app) {
     console.error('Could not find app element');
@@ -29,20 +32,38 @@ function initApp() {
 
     // Add your components here
     const components: ComponentConfig[] = [
-      // Example component:
-      // {
-      //   name: 'my-component',
-      //   create: () => {
-      //     const section = document.createElement('section');
-      //     section.className = 'my-component';
-      //     section.innerHTML = `
-      //       <h1>Welcome to TypeScript Webpack Template</h1>
-      //       <p>Start building your application here</p>
-      //     `;
-      //     return section;
-      //   }
-      // },
-      // Add more components as needed
+      {
+        name: 'header',
+        create: () => new Header().getElement()
+      },
+      {
+        name: 'hero',
+        create: () => new Hero().getElement()
+      },
+      {
+        name: 'about',
+        create: () => new About().getElement()
+      },
+      {
+        name: 'services',
+        create: () => new Services().getElement()
+      },
+      {
+        name: 'materials',
+        create: () => new Materials().getElement()
+      },
+      {
+        name: 'machines',
+        create: () => new Machines().getElement()
+      },
+      {
+        name: 'contact',
+        create: () => new Contact().getElement()
+      },
+      {
+        name: 'footer',
+        create: () => new Footer().getElement()
+      }
     ];
     
     // Create and append all components
@@ -64,20 +85,7 @@ function initApp() {
     // Add main content to the app
     app.appendChild(main);
     
-    // Add a simple footer
-    console.log('Creating footer...');
-    const footer = document.createElement('footer');
-    footer.className = 'footer';
-    footer.innerHTML = /*html*/ `
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; ${new Date().getFullYear()} Your Application. All rights reserved.</p>
-        </div>
-      </div>
-    `;
-
-    // Add the footer to the app
-    app.appendChild(footer);
+    // Footer is now included in the components array
     
     console.log('Application initialized successfully!');
     
