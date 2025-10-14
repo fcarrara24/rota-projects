@@ -1,0 +1,38 @@
+import { machinery } from '../data';
+
+const Machinery = () => {
+  return (
+    <section id="machinery" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
+          I Nostri Macchinari
+        </h2>
+
+        <div className="space-y-6">
+          {machinery.map((machine) => (
+            <div
+              key={machine.id}
+              className="border border-white p-6 bg-black/20 hover:bg-black/30 transition-colors"
+            >
+              <h3 className="text-2xl font-bold text-white mb-3">
+                {machine.nome}
+              </h3>
+              <p className="text-gray-200 leading-relaxed">
+                {machine.descrizione}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center border border-white p-8 bg-black/20">
+          <p className="text-gray-200 text-lg leading-relaxed">
+            Il nostro parco macchine è in costante aggiornamento per garantire lavorazioni
+            all'avanguardia e soddisfare le esigenze più complesse dei nostri clienti.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Machinery;
