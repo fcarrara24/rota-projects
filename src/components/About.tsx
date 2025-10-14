@@ -13,7 +13,7 @@ const About = () => {
             </p>
             <p className="text-lg text-gray-200 leading-relaxed">
               Con decenni di esperienza nel settore della meccanica di precisione,
-              il Lamierificio Rota è il partner ideale per le vostre esigenze produttive.
+              Lavorazioni meccaniche Rota è il partner ideale per le vostre esigenze produttive.
               Dalla progettazione alla realizzazione, seguiamo ogni fase con attenzione
               maniacale ai dettagli.
             </p>
