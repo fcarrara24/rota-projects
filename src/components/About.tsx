@@ -27,7 +27,7 @@ const About = () => {
           <div className="relative">
             <div className="border border-white overflow-hidden h-[400px] md:h-[500px]">
               <img
-                src="../img/PRESENTAZIONE_FOTO.jpg"
+                src="/img/PRESENTAZIONE_FOTO.jpg"
                 alt="Lavorazioni meccaniche"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
