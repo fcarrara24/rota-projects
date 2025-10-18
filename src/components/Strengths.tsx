@@ -19,7 +19,7 @@ const Strengths = () => {
   };
 
   return (
-    <section id="strengths" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+    <section id="strengths" className="py-20 bg-[rgb(98,98,98)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
           {labels.heading[language]}
@@ -35,7 +35,7 @@ const Strengths = () => {
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 border border-white flex items-center justify-center group-hover:bg-white transition-colors">
-                    <Icon size={32} className="text-white group-hover:text-[rgb(61,61,61)] transition-colors" />
+                    <Icon size={32} className="text-white group-hover:text-[rgb(98,98,98)] transition-colors" />
                   </div>
                 </div>
 

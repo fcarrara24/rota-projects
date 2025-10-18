@@ -6,8 +6,8 @@ const Footer = () => {
 
   const labels = {
     copyright: {
-      en: '© 2024 LMR by Rota Stefano. All rights reserved.',
-      it: '© 2024 LMR di Rota Stefano. Tutti i diritti riservati.'
+      en: '© LMR by Rota Stefano. VAT NUMBER 0395936069',
+      it: '© LMR di Rota Stefano. P.IVA 0395936069'
     },
     tagline: {
       en: 'Company specialised in precision mechanical machining | CNC Turning and Milling',
@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[rgb(61,61,61)] border-t border-white py-8">
+    <footer className="bg-[rgb(98,98,98)] border-t border-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-gray-300 text-sm">

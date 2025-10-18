@@ -69,13 +69,13 @@ const Carousel = () => {
   const currentPiece = workPieces[currentIndex];
 
   return (
-    <section id="carousel" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+    <section id="carousel" className="py-20 bg-[rgb(98,98,98)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
           {labels.heading[language]}
         </h2>
 
-        <div className={`relative ${isFullscreen ? 'fixed inset-0 z-50 bg-[rgb(61,61,61)] flex items-center justify-center p-8' : ''}`}>
+        <div className={`relative ${isFullscreen ? 'fixed inset-0 z-50 bg-[rgb(98,98,98)] flex items-center justify-center p-8' : ''}`}>
           {isFullscreen && (
             <button
               onClick={() => setIsFullscreen(false)}
@@ -173,7 +173,7 @@ const Carousel = () => {
 
       {showModal && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
-          <div className="bg-[rgb(61,61,61)] border border-white max-w-2xl w-full p-8 relative" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-[rgb(98,98,98)] border border-white max-w-2xl w-full p-8 relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-4 right-4 text-white p-2 hover:bg-white/10 transition-colors"

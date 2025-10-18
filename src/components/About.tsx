@@ -23,7 +23,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+    <section id="about" className="py-20 bg-[rgb(98,98,98)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

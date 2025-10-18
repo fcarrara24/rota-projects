@@ -23,7 +23,7 @@ const Home = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/DEPOSITO_FOTO.jpg)',
+          backgroundImage: 'url(./img/DEPOSITO_FOTO.jpeg)',
           backgroundAttachment: 'fixed',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -39,7 +39,7 @@ const Home = () => {
         </p>
         <a
           href="#contacts"
-          className="inline-block bg-white text-[rgb(61,61,61)] px-8 py-4 text-lg font-semibold border border-white hover:bg-transparent hover:text-white transition-all duration-300"
+          className="inline-block bg-white text-[rgb(98,98,98)] px-8 py-4 text-lg font-semibold border border-white hover:bg-transparent hover:text-white transition-all duration-300"
         >
           {content.cta[language]}
         </a>

@@ -16,7 +16,7 @@ const Materials = () => {
   };
 
   return (
-    <section id="materials" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+    <section id="materials" className="py-20 bg-[rgb(98,98,98)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
           {labels.heading[language]}

@@ -62,15 +62,15 @@ const Contacts = () => {
       icon: MapPin,
       label: labels.location,
       value: {
-        en: 'Via Industriale 123, Bergamo',
-        it: 'Via Industriale 123, Bergamo'
+        en: 'Via Crespi 24 Pradalunga (BG)',
+        it: 'Via Crespi 24 Pradalunga (BG)'
       },
       link: 'https://maps.google.com/?q=Bergamo,Italy'
     }
   ];
 
   return (
-    <section id="contacts" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
+    <section id="contacts" className="py-20 bg-[rgb(98,98,98)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
           {labels.heading[language]}
@@ -89,7 +89,7 @@ const Contacts = () => {
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 border border-white flex items-center justify-center group-hover:bg-white transition-colors">
-                    <Icon size={32} className="text-white group-hover:text-[rgb(61,61,61)] transition-colors" />
+                    <Icon size={32} className="text-white group-hover:text-[rgb(98,98,98)] transition-colors" />
                   </div>
                 </div>
 
