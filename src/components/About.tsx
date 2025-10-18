@@ -11,14 +11,12 @@ const About = () => {
     paragraphs: {
       en: [
         'We perform turning and milling operations on every material, for both serial production and small batches or prototypes.',
-        'With decades of experience in precision mechanics, Rota Mechanical Works is the ideal partner for your production needs. From design to manufacturing, we follow each stage with meticulous attention to detail.',
-        'We constantly invest in cutting-edge technologies to guarantee top quality machining, reliable lead times, and market competitiveness for our clients.'
-      ],
+        'With decades of experience in precision mechanics, Rota Mechanical Works is the ideal partner for your production needs. From design to manufacturing, we follow each stage with meticulous attention to detail.'
+        ],
       it: [
         'Eseguiamo lavorazioni di tornitura e fresatura per tutti i materiali, sia per produzione in serie sia per piccoli lotti o prototipi.',
-        'Con decenni di esperienza nel settore della meccanica di precisione, Lavorazioni meccaniche Rota è il partner ideale per le vostre esigenze produttive. Dalla progettazione alla realizzazione, seguiamo ogni fase con attenzione maniacale ai dettagli.',
-        'Investiamo costantemente in tecnologie all\'avanguardia per garantire ai nostri clienti lavorazioni di altissima qualità, tempi certi e competitività sul mercato.'
-      ]
+        'Con decenni di esperienza nel settore della meccanica di precisione, Lavorazioni meccaniche Rota è il partner ideale per le vostre esigenze produttive. Dalla progettazione alla realizzazione, seguiamo ogni fase con attenzione maniacale ai dettagli.'
+        ]
     }
   };
 
