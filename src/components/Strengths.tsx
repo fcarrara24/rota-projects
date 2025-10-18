@@ -1,5 +1,6 @@
 import { Clock, Settings, UserCheck } from 'lucide-react';
 import { strengths } from '../data';
+import { useLanguage } from '../contexts/language';
 
 const iconMap = {
   clock: Clock,
@@ -8,11 +9,20 @@ const iconMap = {
 };
 
 const Strengths = () => {
+  const { language } = useLanguage();
+
+  const labels = {
+    heading: {
+      en: 'Our Strengths',
+      it: 'I Nostri Punti di Forza'
+    }
+  };
+
   return (
     <section id="strengths" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
-          I Nostri Punti di Forza
+          {labels.heading[language]}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -30,11 +40,11 @@ const Strengths = () => {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                  {strength.titolo}
+                  {strength.titolo[language]}
                 </h3>
 
                 <p className="text-gray-200 leading-relaxed text-center">
-                  {strength.descrizione}
+                  {strength.descrizione[language]}
                 </p>
               </div>
             );

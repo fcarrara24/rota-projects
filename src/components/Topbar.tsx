@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '../contexts/language';
 
 const Topbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language, toggleLanguage } = useLanguage();
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Chi Siamo', href: '#about' },
-    { label: 'Lavorazioni', href: '#carousel' },
-    { label: 'Punti di Forza', href: '#strengths' },
-    { label: 'Materiali', href: '#materials' },
-    { label: 'Macchinari', href: '#machinery' },
-    { label: 'Contatti', href: '#contacts' }
+    { label: { en: 'Home', it: 'Home' }, href: '#home' },
+    { label: { en: 'About Us', it: 'Chi Siamo' }, href: '#about' },
+    { label: { en: 'Workpieces', it: 'Lavorazioni' }, href: '#carousel' },
+    { label: { en: 'Strengths', it: 'Punti di Forza' }, href: '#strengths' },
+    { label: { en: 'Materials', it: 'Materiali' }, href: '#materials' },
+    { label: { en: 'Machinery', it: 'Macchinari' }, href: '#machinery' },
+    { label: { en: 'Contacts', it: 'Contatti' }, href: '#contacts' }
   ];
 
   const handleLinkClick = () => {
@@ -25,7 +27,7 @@ const Topbar = () => {
           <div className="flex items-center justify-between h-[95px]">
             <div className="flex-shrink-0">
               <a href="#home" className="text-white text-xl font-bold hover:text-gray-300 transition-colors">
-                LMR di Rota Stefano
+                {language === 'en' ? 'LMR by Rota Stefano' : 'LMR di Rota Stefano'}
               </a>
             </div>
 
@@ -36,9 +38,19 @@ const Topbar = () => {
                   href={link.href}
                   className="text-white hover:text-gray-300 transition-colors text-sm font-medium border-b-2 border-transparent hover:border-white pb-1"
                 >
-                  {link.label}
+                  {language === 'en' ? link.label.en : link.label.it}
                 </a>
               ))}
+            </div>
+
+            <div className="hidden md:flex items-center space-x-2">
+              <button
+                onClick={toggleLanguage}
+                className="px-3 py-1 border border-white text-white text-xs font-semibold hover:bg-white hover:text-[rgb(61,61,61)] transition-colors"
+                type="button"
+              >
+                {language === 'en' ? 'IT' : 'EN'}
+              </button>
             </div>
 
             <button
@@ -65,9 +77,20 @@ const Topbar = () => {
               onClick={handleLinkClick}
               className="text-white hover:text-gray-300 transition-colors py-3 border-b border-white/20 font-medium"
             >
-              {link.label}
+              {language === 'en' ? link.label.en : link.label.it}
             </a>
           ))}
+
+          <button
+            onClick={() => {
+              toggleLanguage();
+              handleLinkClick();
+            }}
+            className="mt-6 px-3 py-2 border border-white text-white text-sm font-semibold hover:bg-white hover:text-[rgb(61,61,61)] transition-colors"
+            type="button"
+          >
+            {language === 'en' ? 'Italiano' : 'English'}
+          </button>
         </div>
       </div>
 

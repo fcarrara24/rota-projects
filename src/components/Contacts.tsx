@@ -1,23 +1,70 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useLanguage } from '../contexts/language';
 
 const Contacts = () => {
+  const { language } = useLanguage();
+
+  const labels = {
+    heading: {
+      en: 'Contacts',
+      it: 'Contatti'
+    },
+    phone: {
+      en: 'Phone',
+      it: 'Telefono'
+    },
+    email: {
+      en: 'Email',
+      it: 'Email'
+    },
+    location: {
+      en: 'Location',
+      it: 'Posizione'
+    },
+    openingHours: {
+      en: 'Opening Hours',
+      it: 'Orari di Apertura'
+    },
+    weekdays: {
+      en: 'Monday - Friday: 8:00 - 12:00 / 14:00 - 18:00',
+      it: 'Lunedì - Venerdì: 8:00 - 12:00 / 14:00 - 18:00'
+    },
+    saturday: {
+      en: 'Saturday: 8:00 - 12:00',
+      it: 'Sabato: 8:00 - 12:00'
+    },
+    sunday: {
+      en: 'Sunday: Closed',
+      it: 'Domenica: Chiuso'
+    }
+  };
+
   const contactInfo = [
     {
       icon: Phone,
-      label: 'Telefono',
-      value: '+39 0123 456789',
+      label: labels.phone,
+      value: {
+        en: '+39 0123 456789',
+        it: '+39 0123 456789'
+      },
       link: 'tel:+390123456789'
     },
     {
       icon: Mail,
-      label: 'Email',
-      value: 'info@lamierificiorota.it',
+      label: labels.email,
+      value: {
+        en: 'info@lamierificiorota.it',
+        it: 'info@lamierificiorota.it'
+      },
       link: 'mailto:info@lamierificiorota.it'
     },
     {
       icon: MapPin,
-      label: 'Posizione',
-      value: 'Via Industriale 123, Bergamo',
+      label: labels.location,
+      value: {
+        en: 'Via Industriale 123, Bergamo',
+        it: 'Via Industriale 123, Bergamo'
+      },
       link: 'https://maps.google.com/?q=Bergamo,Italy'
     }
   ];
@@ -26,7 +73,7 @@ const Contacts = () => {
     <section id="contacts" className="py-20 bg-[rgb(61,61,61)] border-b border-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
-          Contatti
+          {labels.heading[language]}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -36,8 +83,8 @@ const Contacts = () => {
               <a
                 key={idx}
                 href={contact.link}
-                target={contact.label === 'Posizione' ? '_blank' : undefined}
-                rel={contact.label === 'Posizione' ? 'noopener noreferrer' : undefined}
+                target={contact.label[language] === labels.location[language] ? '_blank' : undefined}
+                rel={contact.label[language] === labels.location[language] ? 'noopener noreferrer' : undefined}
                 className="border border-white p-8 bg-black/20 hover:bg-black/40 transition-all group block"
               >
                 <div className="flex justify-center mb-6">
@@ -47,11 +94,11 @@ const Contacts = () => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3 text-center">
-                  {contact.label}
+                  {contact.label[language]}
                 </h3>
 
                 <p className="text-gray-200 text-center group-hover:text-white transition-colors">
-                  {contact.value}
+                  {contact.value[language]}
                 </p>
               </a>
             );
@@ -60,12 +107,12 @@ const Contacts = () => {
 
         <div className="mt-16 border border-white p-8 bg-black/20 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Orari di Apertura
+            {labels.openingHours[language]}
           </h3>
           <div className="space-y-2 text-gray-200">
-            <p>Lunedì - Venerdì: 8:00 - 12:00 / 14:00 - 18:00</p>
-            <p>Sabato: 8:00 - 12:00</p>
-            <p>Domenica: Chiuso</p>
+            <p>{labels.weekdays[language]}</p>
+            <p>{labels.saturday[language]}</p>
+            <p>{labels.sunday[language]}</p>
           </div>
         </div>
       </div>
