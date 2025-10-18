@@ -5,12 +5,16 @@ const Home = () => {
 
   const content = {
     heading: {
-      en: 'Rota Mechanical Works',
-      it: 'Lavorazioni Meccaniche Rota'
+      en: 'LMR',
+      it: 'LMR'
     },
     subheading: {
-      en: 'Precision mechanical machining',
-      it: 'Lavorazioni meccaniche di precisione'
+      en: 'MECHANICAL MACHINING',
+      it: 'LAVORAZIONI MECCANICHE'
+    },
+    author: {
+      en: 'ROTA',
+      it: 'ROTA'
     },
     cta: {
       en: 'Contact us',
@@ -31,11 +35,19 @@ const Home = () => {
       />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+        <h1 className="text-8xl md:text-9xl font-bold text-[rgb(255,0,0)] mb-6 tracking-tight">
           {content.heading[language]}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-200 mb-12 font-light">
+         <div className="flex justify-center w-full mb-2">
+          <div className="h-5 w-1/3 bg-green-600"></div>
+          <div className="h-5 w-1/3 bg-white"></div>
+          <div className="h-5 w-1/3 bg-red-600"></div>
+        </div>
+        <p className="text-xl md:text-2xl font-bold" style={{ color: 'rgb(0, 190, 0)' }}>
           {content.subheading[language]}
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-[rgb(0, 172, 0)] mb-12" style={{ color: 'rgb(0, 190, 0)' }}>
+          {content.author[language]}
         </p>
         <a
           href="#contacts"
