@@ -47,16 +47,16 @@ const Contacts = () => {
         en: '+39 0123 456789',
         it: '+39 0123 456789'
       },
-      link: 'tel:+390123456789'
+      link: 'tel:+390350482113'
     },
     {
       icon: Mail,
       label: labels.email,
       value: {
-        en: 'info@lamierificiorota.it',
-        it: 'info@lamierificiorota.it'
+        en: 'lmrmeccanica@gmail.com',
+        it: 'lmrmeccanica@gmail.com'
       },
-      link: 'mailto:info@lamierificiorota.it'
+      link: 'mailto:lmrmeccanica@gmail.com'
     },
     {
       icon: MapPin,

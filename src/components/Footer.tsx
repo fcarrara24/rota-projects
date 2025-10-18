@@ -37,14 +37,14 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             <a
-              href="tel:+390123456789"
+              href="tel:+390350482113"
               className="text-white hover:text-gray-300 transition-colors"
               aria-label={labels.phoneAria[language]}
             >
               <Phone size={24} />
             </a>
             <a
-              href="mailto:info@lamierificiorota.it"
+              href="mailto:lmrmeccanica@gmail.com"
               className="text-white hover:text-gray-300 transition-colors"
               aria-label={labels.emailAria[language]}
             >
