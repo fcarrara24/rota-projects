@@ -22,7 +22,7 @@ const Machinery = () => {
           {labels.heading[language]}
         </h2>
 
-        <div className="space-y-6">
+        <div className="space-y-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {machinery.map((machine) => (
             <div
               key={machine.id}
