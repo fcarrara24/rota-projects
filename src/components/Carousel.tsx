@@ -111,7 +111,7 @@ const Carousel = () => {
               aria-label="Expand workpiece details"
             >
               <img
-                src={`/img/${currentPiece.immagine}`}
+                src={`./img/${currentPiece.immagine}`}
                 alt={currentPiece.nome_pezzo[language]}
                 className="w-full h-[70vh] sm:h-[75vh] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 loading="lazy"
@@ -153,7 +153,7 @@ const Carousel = () => {
 
             <div className="relative h-[50vh]">
               <img
-                src={`/img/${selectedPiece.immagine}`}
+                src={`./img/${selectedPiece.immagine}`}
                 alt={selectedPiece.nome_pezzo[language]}
                 className="w-full max-h-[50vh] object-cover"
                 loading="lazy"

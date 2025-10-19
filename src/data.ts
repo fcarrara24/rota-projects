@@ -23,7 +23,7 @@ export const workPieces: WorkPiece[] = [
       en: 'Batch of 50 pieces',
       it: 'Serie 50 pezzi'
     },
-    immagine: 'flangia_inox_a2.jpg',
+    immagine: 'img_01.png',
     descrizione_completa: {
       en: 'Flange made of AISI 304 stainless steel with precision machining. Mainly used in the automotive industry for applications that require high corrosion resistance and premium surface finishing.',
       it: 'Flangia realizzata in acciaio inossidabile AISI 304 con lavorazioni di precisione. Utilizzata principalmente nel settore automotive per applicazioni che richiedono alta resistenza alla corrosione e finiture di qualità superiore.'
@@ -51,7 +51,7 @@ export const workPieces: WorkPiece[] = [
       en: 'Mass production',
       it: 'Produzione in serie'
     },
-    immagine: 'mozzo_albero_1.jpg',
+    immagine: 'img_02.png',
     descrizione_completa: {
       en: 'Hub for engine shafts made from quenched and tempered C45 steel. Machined with CNC centers to guarantee the dimensional precision and concentricity required for high-load industrial applications.',
       it: 'Mozzo per albero motore realizzato in acciaio C45 bonificato. Lavorato con centri CNC per garantire la massima precisione dimensionale e concentricità necessarie per applicazioni industriali ad alte sollecitazioni.'
@@ -79,7 +79,7 @@ export const workPieces: WorkPiece[] = [
       en: 'Batch of 20 pieces',
       it: 'Lotto 20 pezzi'
     },
-    immagine: 'boccola_bronzo.jpg',
+    immagine: 'img_03.png',
     descrizione_completa: {
       en: 'Bushing in tin bronze (CuSn12) for sliding bearings. Machined on precision lathes to guarantee a perfect interface with the shaft and maximise service life.',
       it: 'Boccola in bronzo al stagno (CuSn12) per cuscinetti a strisciamento. Lavorata con torni di precisione per garantire la perfetta interfaccia con l\'albero e massimizzare la durata in esercizio.'
@@ -107,7 +107,7 @@ export const workPieces: WorkPiece[] = [
       en: 'Prototype',
       it: 'Prototipo'
     },
-    immagine: 'perno_titanio.jpg',
+    immagine: 'img_04.png',
     descrizione_completa: {
       en: 'Threaded pin in Ti6Al4V titanium alloy designed for the aerospace sector. Machining parameters are strictly controlled to avoid overheating and ensure the required mechanical properties.',
       it: 'Perno filettato in lega di titanio Ti6Al4V destinato al settore aerospaziale. Lavorazione critica con parametri controllati per evitare surriscaldamento del materiale e garantire le proprietà meccaniche richieste.'
@@ -135,7 +135,7 @@ export const workPieces: WorkPiece[] = [
       en: 'Batch of 100 pieces',
       it: 'Serie 100 pezzi'
     },
-    immagine: 'ghiera_alluminio.jpg',
+    immagine: 'img_05.png',
     descrizione_completa: {
       en: 'Ring in AA6082 aluminium alloy with anticorodal treatment, ideal for marine applications. Optional anodising further increases resistance to salt corrosion.',
       it: 'Ghiera in lega di alluminio AA6082 con trattamento anticorodal, ideale per applicazioni nautiche. Possibilità di anodizzazione per incrementare ulteriormente la resistenza alla corrosione salina.'
