@@ -238,265 +238,111 @@ export const machinery: Machinery[] = [
   {
     id: '1',
     nome: {
-      en: 'NAKAMURA TMC 30',
-      it: 'NAKAMURA TMC 30'
+      en: 'Parallel Lathes',
+      it: 'Torni Paralleli'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 12,000 RPM, 12kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 12.000 giri/min, 12kW, magazzino utensili 24 posti'
+      en: 'Machines that allow us to work with diameters up to 700 mm in turning operations',
+      it: 'Macchine che ci permettono di lavorare diametri fino a 700 mm nelle operazioni di tornitura'
     }
   },
   {
     id: '2',
     nome: {
-      en: 'NAKAMURA AS200LM',
-      it: 'NAKAMURA AS200LM'
+      en: 'Manual Cutters',
+      it: 'Tagliatrici Manuali'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 12,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 12.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'Two manual cutters for various cutting operations',
+      it: 'Due tagliatrici manuali per diverse operazioni di taglio'
     }
   },
   {
     id: '3',
     nome: {
-      en: 'SMEC SL-25M',
-      it: 'SMEC SL-25M'
+      en: 'NAKAMURA CNC Lathe',
+      it: 'Tornio CNC NAKAMURA'
     },
     descrizione: {
-      en: 'Twin-spindle, single-turret turning center with Y-axis and live tooling, 65mm bar capacity, 5,000 RPM, 11kW, 12-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta singola, asse Y e utensili motorizzati, capacità barre 65mm, 5.000 giri/min, 11kW, magazzino utensili 12 posti'
+      en: 'High-precision CNC lathe for complex turning operations',
+      it: 'Tornio CNC di precisione per lavorazioni complesse'
     }
   },
   {
     id: '4',
     nome: {
-      en: 'SMEC SL-20M',
-      it: 'SMEC SL-20M'
+      en: 'SMEC CNC Lathe',
+      it: 'Tornio CNC SMEC'
     },
     descrizione: {
-      en: 'Single-spindle, single-turret turning center with Y-axis and live tooling, 51mm bar capacity, 5,000 RPM, 11kW, 12-station tool magazine',
-      it: 'Centro di tornitura mono-punta con torretta singola, asse Y e utensili motorizzati, capacità barre 51mm, 5.000 giri/min, 11kW, magazzino utensili 12 posti'
+      en: 'New generation CNC lathe with three radial and three frontal motorized tools',
+      it: 'Tornio CNC di nuova generazione con tre utensili radiali e tre frontali motorizzati'
     }
   },
   {
     id: '5',
     nome: {
-      en: 'NAKAMURA WT-150',
-      it: 'NAKAMURA WT-150'
+      en: '3-Axis Machining Center',
+      it: 'Centro di Lavoro a 3 Assi'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 5,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 5.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'Versatile machining center for complex three-dimensional operations',
+      it: 'Centro di lavoro versatile per operazioni tridimensionali complesse'
     }
   },
   {
     id: '6',
     nome: {
-      en: 'NAKAMURA AS-200',
-      it: 'NAKAMURA AS-200'
+      en: '4-Axis Machining Center',
+      it: 'Centro di Lavoro a 4 Assi'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 6,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 6.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'Advanced machining center with fourth axis for complex operations',
+      it: 'Centro di lavoro avanzato con quarto asse per lavorazioni complesse'
     }
   },
   {
     id: '7',
     nome: {
-      en: 'NAKAMURA TMC-20',
-      it: 'NAKAMURA TMC-20'
+      en: 'Radial and Pillar Drills',
+      it: 'Trapani a Colonna e Radiali'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 6,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 6.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'One radial drill and various pillar drills for precision drilling operations',
+      it: 'Un trapano radiale e vari trapani a colonna per operazioni di foratura di precisione'
     }
   },
   {
     id: '8',
     nome: {
-      en: 'NAKAMURA WT-100',
-      it: 'NAKAMURA WT-100'
+      en: 'Welding Machines with Positioner',
+      it: 'Macchine per Saldatura con Posizionatore'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 5,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 5.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'Welding equipment for small carpentry works with positioner for optimal workpiece orientation',
+      it: 'Attrezzature per saldatura per piccole lavorazioni di carpenteria con posizionatore per l\'orientamento ottimale dei pezzi'
     }
   },
   {
     id: '9',
     nome: {
-      en: 'NAKAMURA SC-200',
-      it: 'NAKAMURA SC-200'
+      en: 'Press',
+      it: 'Presa'
     },
     descrizione: {
-      en: 'Twin-spindle, single-turret turning center with Y-axis and live tooling, 65mm bar capacity, 6,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta singola, asse Y e utensili motorizzati, capacità barre 65mm, 6.000 giri/min, 15kW, magazzino utensili 24 posti'
+      en: 'Press for various mechanical operations',
+      it: 'Presa per diverse operazioni meccaniche'
     }
   },
   {
     id: '10',
     nome: {
-      en: 'NAKAMURA TMC-15',
-      it: 'NAKAMURA TMC-15'
+      en: 'Measuring Instruments',
+      it: 'Strumenti di Misura'
     },
     descrizione: {
-      en: 'Twin-spindle, twin-turret turning center with Y-axis and live tooling, 65mm bar capacity, 6,000 RPM, 15kW, 24-station tool magazine',
-      it: 'Centro di tornitura bi-punta con torretta bipla, asse Y e utensili motorizzati, capacità barre 65mm, 6.000 giri/min, 15kW, magazzino utensili 24 posti'
-    }
-  },
-  {
-    id: '11',
-    nome: {
-      en: 'MAZAK VTC-200A',
-      it: 'MAZAK VTC-200A'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,000 x 500 x 510mm travels, 8,000 RPM, 15kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.000 x 500 x 510mm, 8.000 giri/min, 15kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '12',
-    nome: {
-      en: 'MAZAK VTC-300C',
-      it: 'MAZAK VTC-300C'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 12,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 12.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '13',
-    nome: {
-      en: 'MAZAK VTC-200B',
-      it: 'MAZAK VTC-200B'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 8,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 8.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '14',
-    nome: {
-      en: 'MAZAK VTC-300B',
-      it: 'MAZAK VTC-300B'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 8,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 8.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '15',
-    nome: {
-      en: 'MAZAK VTC-200',
-      it: 'MAZAK VTC-200'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 8,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 8.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '16',
-    nome: {
-      en: 'MAZAK VTC-300',
-      it: 'MAZAK VTC-300'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 8,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 8.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '17',
-    nome: {
-      en: 'MAZAK VTC-200C',
-      it: 'MAZAK VTC-200C'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 12,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 12.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '18',
-    nome: {
-      en: 'MAZAK VTC-300A',
-      it: 'MAZAK VTC-300A'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 8,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 8.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '19',
-    nome: {
-      en: 'MAZAK VTC-200/16SR',
-      it: 'MAZAK VTC-200/16SR'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 16,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 16.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '20',
-    nome: {
-      en: 'MAZAK VTC-300/16SR',
-      it: 'MAZAK VTC-300/16SR'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 16,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 16.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '21',
-    nome: {
-      en: 'MAZAK VTC-200/12',
-      it: 'MAZAK VTC-200/12'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 12,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 12.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '22',
-    nome: {
-      en: 'MAZAK VTC-300/12',
-      it: 'MAZAK VTC-300/12'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 12,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 12.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '23',
-    nome: {
-      en: 'MAZAK VTC-200/16',
-      it: 'MAZAK VTC-200/16'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,020 x 510 x 510mm travels, 16,000 RPM, 15/11kW, 24-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.020 x 510 x 510mm, 16.000 giri/min, 15/11kW, cambio utensile 24 posizioni, predisposizione 4° asse'
-    }
-  },
-  {
-    id: '24',
-    nome: {
-      en: 'MAZAK VTC-300/16',
-      it: 'MAZAK VTC-300/16'
-    },
-    descrizione: {
-      en: 'Vertical machining center, 1,220 x 510 x 560mm travels, 16,000 RPM, 15/11kW, 30-station tool changer, 4th axis ready',
-      it: 'Centro di lavoro verticale, corsa 1.220 x 510 x 560mm, 16.000 giri/min, 15/11kW, cambio utensile 30 posizioni, predisposizione 4° asse'
+      en: 'Complete set of measuring tools including digital calipers (0-150 to 1500mm), internal micrometers, external micrometers (0-900mm), depth micrometers and other necessary instruments',
+      it: 'Set completo di strumenti di misurazione tra cui calibri digitali (0-150 a 1500mm), micrometri interni, micrometri esterni (0-900mm), micrometri di profondità e altri strumenti necessari'
     }
   }
 ];
