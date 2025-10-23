@@ -88,7 +88,7 @@ const Carousel = () => {
         </h2>
 
         <div className="relative">
-          <div className="relative mx-auto max-w-4xl border border-white/40 bg-black/30 rounded-lg overflow-hidden shadow-xl" style={{ maxHeight: '80vh' }}>
+          <div className="relative mx-auto max-w-4xl border border-white/40 bg-black/30 rounded-lg overflow-hidden shadow-xl max-h-[70vh] lg:max-h-[80vh]">
             <button
               onClick={goToPrevious}
               className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/40 backdrop-blur-sm text-white p-3 hover:bg-white/20 transition-colors border border-white/40"
@@ -113,7 +113,7 @@ const Carousel = () => {
               <img
                 src={`./img/${currentPiece.immagine}`}
                 alt={currentPiece.nome_pezzo[language]}
-                className="w-full h-[70vh] sm:h-[75vh] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                className="w-full h-[65vh] md:h-[70vh] lg:h-[75vh] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 loading="lazy"
               />
 
