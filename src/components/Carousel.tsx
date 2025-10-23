@@ -143,15 +143,15 @@ const Carousel = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={() => setShowModal(false)}>
           <div className="bg-[rgb(98,98,98)] border border-white/40 max-w-4xl w-full rounded-lg overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-4 right-4 text-white p-2 hover:bg-white/10 transition-colors"
-              aria-label="Close"
-            >
-              <X size={24} />
-            </button>
-
             <div className="relative h-[50vh]">
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-4 right-4 text-white p-2 hover:bg-white/10 transition-colors"
+                aria-label="Close"
+              >
+                <X size={24} />
+              </button>
+
               <img
                 src={`./img/${selectedPiece.immagine}`}
                 alt={selectedPiece.nome_pezzo[language]}
