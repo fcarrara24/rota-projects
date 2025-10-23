@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[rgb(61,61,61)]">
+    <div className="min-h-screen bg-[rgb(98,98,98)]">
       <Topbar />
       <main>
         <Home />
