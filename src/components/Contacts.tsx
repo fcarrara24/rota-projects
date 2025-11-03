@@ -29,13 +29,10 @@ const Contacts = () => {
       en: 'Monday - Friday: 8:00 - 12:00 / 14:00 - 18:00',
       it: 'Lunedì - Venerdì: 8:00 - 12:00 / 14:00 - 18:00'
     },
-    saturday: {
-      en: 'Saturday: 8:00 - 12:00',
-      it: 'Sabato: 8:00 - 12:00'
-    },
-    sunday: {
-      en: 'Sunday: Closed',
-      it: 'Domenica: Chiuso'
+
+    weekend: {
+      en: 'Saturday - Sunday: Closed',
+      it: 'Sabato - Domenica: Chiuso'
     }
   };
 
@@ -111,8 +108,7 @@ const Contacts = () => {
           </h3>
           <div className="space-y-2 text-gray-200">
             <p>{labels.weekdays[language]}</p>
-            <p>{labels.saturday[language]}</p>
-            <p>{labels.sunday[language]}</p>
+            <p>{labels.weekend[language]}</p>
           </div>
         </div>
       </div>
