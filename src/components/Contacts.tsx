@@ -41,8 +41,8 @@ const Contacts = () => {
       icon: Phone,
       label: labels.phone,
       value: {
-        en: '+39 0123 456789',
-        it: '+39 0123 456789'
+        en: '+035 048 2113',
+        it: '+035 048 2113'
       },
       link: 'tel:+390350482113'
     },

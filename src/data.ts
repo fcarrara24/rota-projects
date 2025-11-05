@@ -151,8 +151,8 @@ export const materials: Material[] = [
       it: 'Acciaio Inossidabile'
     },
     descrizione: {
-      en: 'AISI 304, AISI 316, AISI 430',
-      it: 'AISI 304, AISI 316, AISI 430'
+      en: '',
+      it: ''
     }
   },
   {
@@ -162,8 +162,8 @@ export const materials: Material[] = [
       it: 'Acciaio al Carbonio'
     },
     descrizione: {
-      en: 'C40, C45, C50',
-      it: 'C40, C45, C50'
+      en: '',
+      it: ''
     }
   },
   {
@@ -173,8 +173,8 @@ export const materials: Material[] = [
       it: 'Alluminio'
     },
     descrizione: {
-      en: 'AA6082, AA7075, Ergal',
-      it: 'AA6082, AA7075, Ergal'
+      en: '',
+      it: ''
     }
   },
   {
@@ -184,8 +184,8 @@ export const materials: Material[] = [
       it: 'Bronzo'
     },
     descrizione: {
-      en: 'CuSn12, CuAl10',
-      it: 'CuSn12, CuAl10'
+      en: '',
+      it: 'Bronzo Alluminio' // todo inglese
     }
   },
   {
@@ -195,8 +195,8 @@ export const materials: Material[] = [
       it: 'Ottone'
     },
     descrizione: {
-      en: 'CuZn39Pb3, OT58',
-      it: 'CuZn39Pb3, OT58'
+      en: '',
+      it: ''
     }
   },
   {
@@ -206,19 +206,19 @@ export const materials: Material[] = [
       it: 'Titanio'
     },
     descrizione: {
-      en: 'Ti6Al4V, Grade 2',
-      it: 'Ti6Al4V, Grade 2'
+      en: '',
+      it: ''
     }
   },
   {
     id: '7',
     nome: {
       en: 'Engineering Plastics',
-      it: 'Plastica Tecnica'
+      it: 'Plastica Tecnica e derivati'
     },
     descrizione: {
-      en: 'POM, PTFE, Nylon',
-      it: 'POM, PTFE, Nylon'
+      en: 'PEEK',
+      it: 'PEEK'
     }
   },
   {
@@ -228,10 +228,27 @@ export const materials: Material[] = [
       it: 'Acciaio Legato'
     },
     descrizione: {
-      en: '39NiCrMo3, 42CrMo4',
-      it: '39NiCrMo3, 42CrMo4'
+      en: '',
+      it: ''
     }
-  }
+  },
+  {
+    id: '9',
+    nome: {
+      en: 'Tungsten',
+      it: 'Tungsteno'
+    },
+    descrizione: {
+      en: '',
+      it: ''
+    }
+  },
+  // superleghe (RIQUADRO)
+  // inconeL 718, inconeL API 718, uns 31803, uns 32750, uns 32760, uns s31254
+
+  // todo gestione altezza fissa elementi nella pagina
+  // materiale riporto (stellite, inconel)
+
 ];
 
 export const machinery: Machinery[] = [
