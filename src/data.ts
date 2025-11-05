@@ -243,6 +243,29 @@ export const materials: Material[] = [
       it: ''
     }
   },
+  {
+    id: '10',
+    nome: {
+      en: 'Copper',
+      it: 'Rame'
+    },
+    descrizione: {
+      en: '',
+      it: ''
+    }
+  },
+  {
+    id: '11',
+    nome: {
+      en: 'White Metal',
+      it: 'Metallo Bianco'
+    },
+    descrizione: {
+      en: '',
+      it: ''
+    }
+  },
+
   // superleghe (RIQUADRO)
   // inconeL 718, inconeL API 718, uns 31803, uns 32750, uns 32760, uns s31254
 
@@ -267,11 +290,11 @@ export const machinery: Machinery[] = [
     id: '2',
     nome: {
       en: 'Manual Cutters',
-      it: 'Tagliatrici Manuali'
+      it: 'Seghetti Manuali'
     },
     descrizione: {
       en: 'Two manual cutters for various cutting operations',
-      it: 'Due tagliatrici manuali per diverse operazioni di taglio'
+      it: 'Due seghetti manuali per diverse operazioni di taglio'
     }
   },
   {
@@ -344,11 +367,11 @@ export const machinery: Machinery[] = [
     id: '9',
     nome: {
       en: 'Press',
-      it: 'Presa'
+      it: 'Pressa'
     },
     descrizione: {
       en: 'Press for various mechanical operations',
-      it: 'Presa per diverse operazioni meccaniche'
+      it: 'Pressa per diverse operazioni meccaniche'
     }
   },
   {

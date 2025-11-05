@@ -26,8 +26,8 @@ const Contacts = () => {
       it: 'Orari di Apertura'
     },
     weekdays: {
-      en: 'Monday - Friday: 8:00 - 12:00 / 14:00 - 18:00',
-      it: 'Lunedì - Venerdì: 8:00 - 12:00 / 14:00 - 18:00'
+      en: 'Monday - Friday: 8:00 - 12:30 / 13:30 - 17:00',
+      it: 'Lunedì - Venerdì: 8:00 - 12:30 / 13:30 - 17:00'
     },
 
     weekend: {
@@ -44,7 +44,7 @@ const Contacts = () => {
         en: '+035 048 2113',
         it: '+035 048 2113'
       },
-      link: 'tel:+390350482113'
+      link: 'tel:+0350482113'
     },
     {
       icon: Mail,
