@@ -1,8 +1,24 @@
 import { Phone, Mail, Instagram } from 'lucide-react';
 import { useLanguage } from '../contexts/language';
+import { useState } from 'react';
+import { Toast } from './ui/Toast';
 
 const Footer = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage() as { language: 'en' | 'it' };
+  const [showToast, setShowToast] = useState(false);
+
+  const showEmailAlert = async () => {
+    try {
+      window.location.href = 'mailto:lmrmeccanica@gmail.com';
+      setTimeout(() => {
+        navigator.clipboard.writeText('lmrmeccanica@gmail.com');
+        setShowToast(true);
+      }, 200);
+    } catch {
+      navigator.clipboard.writeText('lmrmeccanica@gmail.com');
+      setShowToast(true);
+    }
+  };
 
   const labels = {
     copyright: {
@@ -27,6 +43,11 @@ const Footer = () => {
     }
   };
 
+  const alert_message = {
+    en: 'Email copied successfully: lmrmeccanica@gmail.com',
+    it: 'Indirizzo email copiato negli appunti: lmrmeccanica@gmail.com'
+  }
+
   return (
     <footer className="bg-[rgb(98,98,98)] border-t border-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,15 +64,34 @@ const Footer = () => {
             >
               <Phone size={24} />
             </a>
+            {/* todo link per la mail corretto */}
+            <div className="relative">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  showEmailAlert();
+                }}
+                className="text-white hover:text-gray-300 transition-colors cursor-pointer"
+                aria-label={labels.emailAria[language]}
+                title="lmrmeccanica@gmail.com"
+              >
+                <Mail size={24} />
+              </a>
+
+              <Toast
+                message={alert_message[language]}
+                showProgressBar={true}
+                showCloseButton={true}
+                duration={3000}
+                position="bottom-right"
+                isVisible={showToast}
+                onClose={() => setShowToast(false)}
+                progressBarColor="bg-blue-500"
+              />
+            </div>
             <a
-              href="mailto:lmrmeccanica@gmail.com"
-              className="text-white hover:text-gray-300 transition-colors"
-              aria-label={labels.emailAria[language]}
-            >
-              <Mail size={24} />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/lmr.rota"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
