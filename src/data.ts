@@ -148,7 +148,7 @@ export const workPieces: WorkPiece[] = [
 // todo aggiungere foto dei materiali
 // todo (secondo me) aggiungere la storia dell'origine dell'azienda
 // todo attendere per eventuale foto di gruppo per inserimento elementi
-export const replacement_materials: Material[] = [
+export const materials: Material[] = [
   {
     id: '1',
     nome: {
@@ -284,7 +284,7 @@ export const replacement_materials: Material[] = [
 ];
 
 // Materiali di Riporto
-export const materialiRiporto: Material[] = [
+export const replacement_materials: Material[] = [
   {
     id: '13',
     nome: {
