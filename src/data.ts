@@ -143,6 +143,11 @@ export const workPieces: WorkPiece[] = [
   }
 ];
 
+// todo creare sezione dedicata materiali riporto
+// todo controllare altezza costante degli elementi, 
+// todo aggiungere foto dei materiali
+// todo (secondo me) aggiungere la storia dell'origine dell'azienda
+// todo attendere per eventuale foto di gruppo per inserimento elementi
 export const replacement_materials: Material[] = [
   {
     id: '1',
