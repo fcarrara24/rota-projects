@@ -5,18 +5,28 @@ import { Toast } from './ui/Toast';
 
 const Footer = () => {
   const { language } = useLanguage() as { language: 'en' | 'it' };
-  const [showToast, setShowToast] = useState(false);
+  const [showEmailToast, setShowEmailToast] = useState(false);
+  const [showPhoneToast, setShowPhoneToast] = useState(false);
 
   const showEmailAlert = async () => {
     try {
       window.location.href = 'mailto:lmrmeccanica@gmail.com';
       setTimeout(() => {
         navigator.clipboard.writeText('lmrmeccanica@gmail.com');
-        setShowToast(true);
+        setShowEmailToast(true);
       }, 200);
     } catch {
       navigator.clipboard.writeText('lmrmeccanica@gmail.com');
-      setShowToast(true);
+      setShowEmailToast(true);
+    }
+  };
+
+  const showPhoneAlert = async () => {
+    try {
+      navigator.clipboard.writeText('+390350482113');
+      setShowPhoneToast(true);
+    } catch {
+      setShowPhoneToast(true);
     }
   };
 
@@ -43,9 +53,15 @@ const Footer = () => {
     }
   };
 
-  const alert_message = {
-    en: 'Email copied successfully: lmrmeccanica@gmail.com',
-    it: 'Indirizzo email copiato negli appunti: lmrmeccanica@gmail.com'
+  const alert_messages = {
+    email: {
+      en: 'Email copied successfully: lmrmeccanica@gmail.com',
+      it: 'Indirizzo email copiato negli appunti: lmrmeccanica@gmail.com'
+    },
+    phone: {
+      en: 'Phone number copied: +39 035 0482113',
+      it: 'Numero di telefono copiato: +39 035 0482113'
+    }
   }
 
   return (
@@ -57,13 +73,32 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <a
-              href="tel:+390350482113"
-              className="text-white hover:text-gray-300 transition-colors"
-              aria-label={labels.phoneAria[language]}
-            >
-              <Phone size={24} />
-            </a>
+            <div className="relative">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  showPhoneAlert();
+                }}
+                className="text-white hover:text-gray-300 transition-colors cursor-pointer"
+                aria-label={labels.phoneAria[language]}
+                title="+39 035 0482113"
+              >
+                <Phone size={24} />
+              </a>
+
+              {showPhoneToast && (
+                <Toast
+                  message={alert_messages.phone[language]}
+                  showProgressBar={true}
+                  showCloseButton={true}
+                  duration={3000}
+                  position="bottom-right"
+                  onClose={() => setShowPhoneToast(false)}
+                  progressBarColor="bg-green-500"
+                />
+              )}
+            </div>
             {/* todo link per la mail corretto */}
             <div className="relative">
               <a
@@ -79,16 +114,17 @@ const Footer = () => {
                 <Mail size={24} />
               </a>
 
-              <Toast
-                message={alert_message[language]}
-                showProgressBar={true}
-                showCloseButton={true}
-                duration={3000}
-                position="bottom-right"
-                isVisible={showToast}
-                onClose={() => setShowToast(false)}
-                progressBarColor="bg-blue-500"
-              />
+              {showEmailToast && (
+                <Toast
+                  message={alert_messages.email[language]}
+                  showProgressBar={true}
+                  showCloseButton={true}
+                  duration={3000}
+                  position="bottom-right"
+                  onClose={() => setShowEmailToast(false)}
+                  progressBarColor="bg-blue-500"
+                />
+              )}
             </div>
             <a
               href="https://www.instagram.com/lmr.rota"
