@@ -143,7 +143,7 @@ export const workPieces: WorkPiece[] = [
   }
 ];
 
-export const materials: Material[] = [
+export const replacement_materials: Material[] = [
   {
     id: '1',
     nome: {
@@ -184,8 +184,8 @@ export const materials: Material[] = [
       it: 'Bronzo'
     },
     descrizione: {
-      en: '',
-      it: 'Bronzo Alluminio' // todo inglese
+      en: 'Aluminum Bronze',
+      it: 'Bronzo Alluminio'
     }
   },
   {
@@ -265,13 +265,44 @@ export const materials: Material[] = [
       it: ''
     }
   },
+  {
+    id: '12',
+    nome: {
+      en: 'Superalloys',
+      it: 'Superleghe'
+    },
+    descrizione: {
+      en: 'InconeL 718, InconeL API 718, UNS 31803, UNS 32750, UNS 32760, UNS S31254',
+      it: 'InconeL 718, InconeL API 718, UNS 31803, UNS 32750, UNS 32760, UNS S31254'
+    }
+  }
+];
 
-  // superleghe (RIQUADRO)
-  // inconeL 718, inconeL API 718, uns 31803, uns 32750, uns 32760, uns s31254
-
-  // todo gestione altezza fissa elementi nella pagina
-  // materiale riporto (stellite, inconel)
-
+// Materiali di Riporto
+export const materialiRiporto: Material[] = [
+  {
+    id: '13',
+    nome: {
+      en: 'Stellite',
+      it: 'Stellite'
+    },
+    descrizione: {
+      en: 'Cobalt-based alloy with exceptional wear and corrosion resistance',
+      it: 'Lega a base di cobalto con eccezionale resistenza all\'usura e alla corrosione'
+    }
+  },
+  {
+    id: '14',
+    nome: {
+      en: 'INCONEL',
+      it: 'INCONEL'
+    },
+    descrizione: {
+      en: 'Nickel-based superalloy with excellent mechanical properties and corrosion resistance at high temperatures',
+      it: 'Superlega a base di nichel con eccellenti proprietà meccaniche e resistenza alla corrosione ad alte temperature'
+    }
+  },
+  // todo: gestione altezza fissa elementi nella pagina
 ];
 
 export const machinery: Machinery[] = [
