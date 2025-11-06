@@ -1,7 +1,23 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/language';
+import { useState } from 'react';
+import { Toast } from './ui/Toast';
 
 const Contacts = () => {
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
+  const handleCopy = async (e: React.MouseEvent, text: string, message: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    try {
+      await navigator.clipboard.writeText(text);
+      setToastMessage(message);
+      setShowToast(true);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
   const { language } = useLanguage();
 
   const labels = {
@@ -41,10 +57,15 @@ const Contacts = () => {
       icon: Phone,
       label: labels.phone,
       value: {
-        en: '+035 048 2113',
-        it: '+035 048 2113'
+        en: '035 048 2113',
+        it: '035 048 2113'
       },
-      link: 'tel:+0350482113'
+      link: 'tel:0350482113',
+      copyText: '035 048 2113',
+      copyMessage: {
+        en: 'Phone number copied',
+        it: 'Numero di telefono copiato'
+      }
     },
     {
       icon: Mail,
@@ -53,7 +74,12 @@ const Contacts = () => {
         en: 'lmrmeccanica@gmail.com',
         it: 'lmrmeccanica@gmail.com'
       },
-      link: 'mailto:lmrmeccanica@gmail.com'
+      link: 'mailto:lmrmeccanica@gmail.com',
+      copyText: 'lmrmeccanica@gmail.com',
+      copyMessage: {
+        en: 'Email copied',
+        it: 'Email copiata'
+      }
     },
     {
       icon: MapPin,
@@ -62,7 +88,12 @@ const Contacts = () => {
         en: 'Via Crespi 24 Pradalunga (BG)',
         it: 'Via Crespi 24 Pradalunga (BG)'
       },
-      link: 'https://maps.google.com/?q=Bergamo,Italy'
+      link: 'https://www.google.com/maps/place/Via+Crespi,+24,+24020+Pradalunga+BG/',
+      copyText: 'Via Crespi 24, 24020 Pradalunga (BG)',
+      copyMessage: {
+        en: 'Address copied',
+        it: 'Indirizzo copiato'
+      }
     }
   ];
 
@@ -76,13 +107,14 @@ const Contacts = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {contactInfo.map((contact, idx) => {
             const Icon = contact.icon;
+            const isMap = contact.label[language] === labels.location[language];
+
             return (
-              <a
+              <div
                 key={idx}
-                href={contact.link}
-                target={contact.label[language] === labels.location[language] ? '_blank' : undefined}
-                rel={contact.label[language] === labels.location[language] ? 'noopener noreferrer' : undefined}
-                className="border border-white p-8 bg-black/20 hover:bg-black/40 transition-all group block"
+                onClick={(e) => contact.copyText && handleCopy(e, contact.copyText, contact.copyMessage[language])}
+                className={`border border-white p-8 bg-black/20 hover:bg-black/40 transition-all group block cursor-pointer ${!isMap ? 'relative' : ''
+                  }`}
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 border border-white flex items-center justify-center group-hover:bg-white transition-colors">
@@ -97,7 +129,13 @@ const Contacts = () => {
                 <p className="text-gray-200 text-center group-hover:text-white transition-colors">
                   {contact.value[language]}
                 </p>
-              </a>
+
+                {!isMap && (
+                  <span className="absolute bottom-2 right-2 text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {language === 'en' ? 'Click to copy' : 'Clicca per copiare'}
+                  </span>
+                )}
+              </div>
             );
           })}
         </div>
@@ -111,6 +149,18 @@ const Contacts = () => {
             <p>{labels.weekend[language]}</p>
           </div>
         </div>
+
+        {showToast && (
+          <Toast
+            message={toastMessage}
+            showProgressBar={true}
+            showCloseButton={true}
+            duration={3000}
+            position="bottom-right"
+            onClose={() => setShowToast(false)}
+            progressBarColor="bg-blue-500"
+          />
+        )}
       </div>
     </section>
   );
