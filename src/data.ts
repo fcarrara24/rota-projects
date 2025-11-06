@@ -4,124 +4,124 @@ export const workPieces: WorkPiece[] = [
   {
     id: '1',
     nome_pezzo: {
-      en: 'A2 Stainless Steel Flange',
-      it: 'Flangia Inox A2'
+      en: 'Lids',
+      it: 'Coperchi'
     },
     lista_materiale: {
-      en: ['AISI 304', 'Stainless steel'],
-      it: ['AISI 304', 'Acciaio Inossidabile']
+      en: ['UNS32760'],
+      it: ['UNS32760']
     },
     provenienza: {
-      en: 'Automotive',
-      it: 'Automotive'
+      en: 'Valve',
+      it: 'Valvole'
     },
     punti_di_forza: {
-      en: ['High corrosion resistance', 'Polished finish', 'Tight tolerances'],
-      it: ['Alta resistenza alla corrosione', 'Finitura lucida', 'Tolleranze ristrette']
+      en: [''],
+      it: ['']
     },
     lotto: {
-      en: 'Batch of 50 pieces',
-      it: 'Serie 50 pezzi'
+      en: 'Custom batches with various pieces available upon request',
+      it: 'Lotti personalizzati con pezzi vari su richiesta del cliente'
     },
     immagine: 'img_01.png',
     descrizione_completa: {
-      en: 'Flange made of AISI 304 stainless steel with precision machining. Mainly used in the automotive industry for applications that require high corrosion resistance and premium surface finishing.',
-      it: 'Flangia realizzata in acciaio inossidabile AISI 304 con lavorazioni di precisione. Utilizzata principalmente nel settore automotive per applicazioni che richiedono alta resistenza alla corrosione e finiture di qualità superiore.'
+      en: '',
+      it: ''
     }
   },
   {
     id: '2',
     nome_pezzo: {
-      en: 'Engine Shaft Hub',
-      it: 'Mozzo Albero Motore'
+      en: 'Shutter',
+      it: 'Otturatore'
     },
     lista_materiale: {
-      en: ['C45', 'Quenched and tempered steel'],
-      it: ['C45', 'Acciaio bonificato']
+      en: ['INCONEL 718', 'Stellite'],
+      it: ['INCONEL 718', 'Stellite']
     },
     provenienza: {
-      en: 'Industrial',
-      it: 'Industriale'
+      en: 'Valve',
+      it: 'Valvole'
     },
     punti_di_forza: {
-      en: ['High mechanical strength', 'CNC machining', 'ISO certification'],
-      it: ['Resistenza meccanica elevata', 'Lavorazione CNC', 'Certificazione ISO']
+      en: [''],
+      it: ['']
     },
     lotto: {
-      en: 'Mass production',
-      it: 'Produzione in serie'
+      en: 'Custom batches with various pieces available upon request',
+      it: 'Lotti personalizzati con pezzi vari su richiesta del cliente'
     },
     immagine: 'img_02.png',
     descrizione_completa: {
-      en: 'Hub for engine shafts made from quenched and tempered C45 steel. Machined with CNC centers to guarantee the dimensional precision and concentricity required for high-load industrial applications.',
-      it: 'Mozzo per albero motore realizzato in acciaio C45 bonificato. Lavorato con centri CNC per garantire la massima precisione dimensionale e concentricità necessarie per applicazioni industriali ad alte sollecitazioni.'
+      en: '',
+      it: ''
     }
   },
   {
     id: '3',
     nome_pezzo: {
-      en: 'Bronze Bushing',
-      it: 'Boccola Bronzo'
+      en: 'Blind Sealing Discs',
+      it: 'Dischi Ciechi di Tenuta'
     },
     lista_materiale: {
-      en: ['CuSn12 bronze', 'Tin bronze'],
-      it: ['Bronzo CuSn12', 'Bronzo al stagno']
+      en: ['Stainless Steel'],
+      it: ['Acciaio Inox']
     },
     provenienza: {
-      en: 'General mechanics',
-      it: 'Meccanica generale'
+      en: 'Plant Engineering',
+      it: 'Impiantistica'
     },
     punti_di_forza: {
-      en: ['Low friction coefficient', 'Wear resistance', 'Dimensional accuracy'],
-      it: ['Basso coefficiente di attrito', "Resistenza all'usura", 'Precisione dimensionale']
+      en: [''],
+      it: ['']
     },
     lotto: {
-      en: 'Batch of 20 pieces',
-      it: 'Lotto 20 pezzi'
+      en: 'Custom batches with various pieces available upon request',
+      it: 'Lotti personalizzati con pezzi vari su richiesta del cliente'
     },
     immagine: 'img_03.png',
     descrizione_completa: {
-      en: 'Bushing in tin bronze (CuSn12) for sliding bearings. Machined on precision lathes to guarantee a perfect interface with the shaft and maximise service life.',
-      it: 'Boccola in bronzo al stagno (CuSn12) per cuscinetti a strisciamento. Lavorata con torni di precisione per garantire la perfetta interfaccia con l\'albero e massimizzare la durata in esercizio.'
+      en: '',
+      it: ''
     }
   },
   {
     id: '4',
     nome_pezzo: {
-      en: 'Titanium Threaded Pin',
-      it: 'Perno Filettato Titanio'
+      en: 'Triple Sealing Rings',
+      it: 'Anelli Tripli Di tenuta'
     },
     lista_materiale: {
-      en: ['Ti6Al4V', 'Grade 5 titanium'],
-      it: ['Ti6Al4V', 'Titanio Grade 5']
+      en: ['AISI 420', 'PEEK', 'PTFE'],
+      it: ['AISI 420', 'PEEK', 'PTFE']
     },
     provenienza: {
-      en: 'Aerospace',
-      it: 'Aerospaziale'
+      en: 'Plant Engineering',
+      it: 'Impiantistica'
     },
     punti_di_forza: {
-      en: ['Extreme lightness', 'Fatigue resistance', 'Biocompatibility'],
-      it: ['Leggerezza estrema', 'Resistenza alla fatica', 'Biocompatibilità']
+      en: [''],
+      it: ['']
     },
     lotto: {
-      en: 'Prototype',
-      it: 'Prototipo'
+      en: 'Custom batches with various pieces available upon request',
+      it: 'Lotti personalizzati con pezzi vari su richiesta del cliente'
     },
     immagine: 'img_04.png',
     descrizione_completa: {
-      en: 'Threaded pin in Ti6Al4V titanium alloy designed for the aerospace sector. Machining parameters are strictly controlled to avoid overheating and ensure the required mechanical properties.',
-      it: 'Perno filettato in lega di titanio Ti6Al4V destinato al settore aerospaziale. Lavorazione critica con parametri controllati per evitare surriscaldamento del materiale e garantire le proprietà meccaniche richieste.'
+      en: '',
+      it: ''
     }
   },
   {
     id: '5',
     nome_pezzo: {
-      en: 'Anticorodal Aluminum Ring',
-      it: 'Ghiera Alluminio Anticorodal'
+      en: 'Ring with Tangent Cuts for Sealing',
+      it: 'Anello Con Tagli Tangenti per Tenuta'
     },
     lista_materiale: {
-      en: ['AA6082', 'Anticorodal aluminum'],
-      it: ['AA6082', 'Alluminio anticorodal']
+      en: ['PEEK'],
+      it: ['PEEK']
     },
     provenienza: {
       en: 'Marine industry',
@@ -132,13 +132,13 @@ export const workPieces: WorkPiece[] = [
       it: ['Leggerezza', 'Resistenza alla corrosione marina', 'Anodizzazione disponibile']
     },
     lotto: {
-      en: 'Batch of 100 pieces',
-      it: 'Serie 100 pezzi'
+      en: 'Custom batches with various pieces available upon request',
+      it: 'Lotti personalizzati con pezzi vari su richiesta del cliente'
     },
     immagine: 'img_05.png',
     descrizione_completa: {
-      en: 'Ring in AA6082 aluminium alloy with anticorodal treatment, ideal for marine applications. Optional anodising further increases resistance to salt corrosion.',
-      it: 'Ghiera in lega di alluminio AA6082 con trattamento anticorodal, ideale per applicazioni nautiche. Possibilità di anodizzazione per incrementare ulteriormente la resistenza alla corrosione salina.'
+      en: '',
+      it: ''
     }
   }
 ];
@@ -381,8 +381,19 @@ export const machinery: Machinery[] = [
       it: 'Strumenti di Misura'
     },
     descrizione: {
-      en: 'Complete set of measuring tools including digital calipers (0-150 to 1500mm), internal micrometers, external micrometers (0-900mm), depth micrometers and other necessary instruments',
-      it: 'Set completo di strumenti di misurazione tra cui calibri digitali (0-150 a 1500mm), micrometri interni, micrometri esterni (0-900mm), micrometri di profondità e altri strumenti necessari'
+      en: 'Complete set of measuring tools including digital calipers (0-150 to 1500mm), internal micrometers, external micrometers (0-900mm), depth micrometers, altimeter and other necessary instruments',
+      it: 'Set completo di strumenti di misurazione tra cui calibri digitali (0-150 a 1500mm), micrometri interni, micrometri esterni (0-900mm), micrometri di profondità, altimetro tesa e altri strumenti necessari'
+    }
+  },
+  {
+    id: '11',
+    nome: {
+      en: 'TODO',
+      it: 'Frese Manuali e Lapidelli di Misura'
+    },
+    descrizione: {
+      en: '',
+      it: ''
     }
   }
 ];
