@@ -124,8 +124,8 @@ export const workPieces: WorkPiece[] = [
       it: ['PEEK']
     },
     provenienza: {
-      en: 'Marine industry',
-      it: 'Nautica'
+      en: 'Plant Engineering',
+      it: 'Impiantistica'
     },
     punti_di_forza: {
       en: ['Lightweight', 'Resistance to marine corrosion', 'Anodising available'],
@@ -424,8 +424,8 @@ export const machinery: Machinery[] = [
   {
     id: '11',
     nome: {
-      en: 'TODO',
-      it: 'Frese Manuali e Lapidelli di Misura'
+      en: 'Manual Cutters and Lapidaries',
+      it: 'Frese Manuali e Lapidelli'
     },
     descrizione: {
       en: '',
