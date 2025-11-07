@@ -52,15 +52,15 @@ const Machinery = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {galleryItems.map((item) => (
-              <div 
+              <div
                 key={item.id}
                 className="bg-black/20 p-6 rounded-lg border border-white/20 hover:border-amber-400/30 transition-colors"
               >
-                <div className="h-64 mb-4 overflow-hidden rounded">
+                <div className="h-[70vh] mb-4 overflow-hidden rounded flex items-center">
                   <img
                     src={item.immagine}
                     alt={item.titolo[language]}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto max-h-full mx-auto hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2">
