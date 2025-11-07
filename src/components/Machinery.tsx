@@ -22,11 +22,11 @@ const Machinery = () => {
           {labels.heading[language]}
         </h2>
 
-        <div className="space-y-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {machinery.map((machine) => (
             <div
               key={machine.id}
-              className="border border-white p-6 bg-black/20 hover:bg-black/30 transition-colors"
+              className="h-full border border-white p-6 bg-black/20 hover:bg-black/30 transition-colors"
             >
               <h3 className="text-2xl font-bold text-white mb-3">
                 {machine.nome[language]}
