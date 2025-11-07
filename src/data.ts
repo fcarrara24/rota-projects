@@ -320,7 +320,7 @@ export const galleryItems = [
       en: 'Precision measurement instrument for dimensional control of mechanical parts',
       it: 'Strumento di misurazione di precisione per il controllo dimensionale dei pezzi meccanici'
     },
-    immagine: '/img/machinery/altimetro-tesa.jpg'
+    immagine: 'img/altimetro_tesa.png'
   },
   {
     id: '2',
@@ -332,7 +332,7 @@ export const galleryItems = [
       en: 'Machine for precision turning operations on metals and other materials',
       it: 'Macchinario per lavorazioni di tornitura di precisione su metalli e altri materiali'
     },
-    immagine: '/img/machinery/tornio-parallelo.jpg'
+    immagine: 'img/tornio_parallelo.png'
   }
 ];
 
