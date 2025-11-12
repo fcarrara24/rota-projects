@@ -39,3 +39,10 @@ export interface Strength {
   descrizione: TranslatedText;
   icon: string;
 }
+
+export interface GalleryItem {
+  id: string;
+  titolo: TranslatedText;
+  descrizione: TranslatedText;
+  immagine: string;
+}

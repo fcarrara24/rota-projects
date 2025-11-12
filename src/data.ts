@@ -124,8 +124,8 @@ export const workPieces: WorkPiece[] = [
       it: ['PEEK']
     },
     provenienza: {
-      en: 'Marine industry',
-      it: 'Nautica'
+      en: 'Plant Engineering',
+      it: 'Impiantistica'
     },
     punti_di_forza: {
       en: ['Lightweight', 'Resistance to marine corrosion', 'Anodising available'],
@@ -143,8 +143,6 @@ export const workPieces: WorkPiece[] = [
   }
 ];
 
-// todo creare sezione dedicata materiali riporto
-// todo controllare altezza costante degli elementi, 
 // todo aggiungere foto dei materiali
 // todo (secondo me) aggiungere la storia dell'origine dell'azienda
 // todo attendere per eventuale foto di gruppo per inserimento elementi
@@ -310,6 +308,34 @@ export const replacement_materials: Material[] = [
   // todo: gestione altezza fissa elementi nella pagina
 ];
 
+// Galleria immagini macchinari
+export const galleryItems = [
+  {
+    id: '1',
+    titolo: {
+      en: 'Tesa Height Gauge',
+      it: 'Altimetro Tesa'
+    },
+    descrizione: {
+      en: 'Precision measurement instrument for dimensional control of mechanical parts',
+      it: 'Strumento di misurazione di precisione per il controllo dimensionale dei pezzi meccanici'
+    },
+    immagine: 'img/altimetro_tesa.png'
+  },
+  {
+    id: '2',
+    titolo: {
+      en: 'Parallel Lathe',
+      it: 'Tornio Parallelo'
+    },
+    descrizione: {
+      en: 'Machine for precision turning operations on metals and other materials',
+      it: 'Macchinario per lavorazioni di tornitura di precisione su metalli e altri materiali'
+    },
+    immagine: 'img/tornio_parallelo.png'
+  }
+];
+
 export const machinery: Machinery[] = [
   {
     id: '1',
@@ -424,8 +450,8 @@ export const machinery: Machinery[] = [
   {
     id: '11',
     nome: {
-      en: 'TODO',
-      it: 'Frese Manuali e Lapidelli di Misura'
+      en: 'Manual Cutters and Lapidaries',
+      it: 'Frese Manuali e Lapidelli'
     },
     descrizione: {
       en: '',

@@ -99,7 +99,6 @@ const Footer = () => {
                 />
               )}
             </div>
-            {/* todo link per la mail corretto */}
             <div className="relative">
               <a
                 href="#"
