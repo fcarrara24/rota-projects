@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
-    "deploy": "npm run build && echo 'domain.it' > dist/CNAME && gh-pages -d dist --dotfiles"
+    "deploy": "npm run build && echo 'lmrmeccanica.com' > dist/CNAME && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
