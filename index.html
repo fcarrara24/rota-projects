@@ -1,13 +1,77 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMR Rota</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LMR Rota - Tornitura e Fresatura a Pradalunga (BG)</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="LMR Rota esegue lavorazioni di tornitura e fresatura su tutti i materiali, sia per produzione in serie sia per piccoli lotti o prototipi. Sede a Pradalunga (BG). Contattaci per lavorazioni meccaniche di precisione.">
+  <meta name="keywords"
+    content="tornitura, fresatura, lavorazioni meccaniche, officina meccanica, prototipi, produzione in serie, LMR Rota, Pradalunga, Bergamo">
+  <meta name="author" content="Stefano Rota">
+  <meta name="google-site-verification" content="i-08VwaROjGuSpiIdMscS3f_Iq8h0ACGhZHjdsKH5f4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LMR Rota - Lavorazioni Meccaniche di Precisione">
+  <meta property="og:description"
+    content="Tornitura e fresatura per ogni tipo di materiale. Piccoli lotti, prototipi e produzione in serie. Sede a Pradalunga (BG).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lmrmeccanica.com/">
+  <meta property="og:image" content="https://lmrmeccanica.com/img/preview.jpg">
+
+  <!-- Schema.org (Local Business) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "LMR Rota",
+      "image": "https://lmrmeccanica.com/img/preview.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Crespi 24",
+        "addressLocality": "Pradalunga",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      },
+      "url": "https://lmrmeccanica.com",
+      "telephone": "+390350482113",
+      "email": "lmrmeccanica@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/lmr.rota"
+      ],
+      "description": "Lavorazioni di tornitura e fresatura su tutti i materiali: produzione in serie, piccoli lotti e prototipi di precisione."
+    }
+    </script>
+
+  <!-- Fake internal indexing -->
+  <style>
+    .hidden-links {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Link fittizi per indicizzazione -->
+  <div class="hidden-links">
+    <a href="/about">Chi siamo</a>
+    <a href="/servizi/tornitura">Servizi di tornitura</a>
+    <a href="/servizi/fresatura">Servizi di fresatura</a>
+    <a href="/contatti">Contatti</a>
+    <a href="/preventivi">Richiesta preventivo</a>
+  </div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
