@@ -7,17 +7,24 @@ const Contacts = () => {
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
 
-  const handleCopy = async (e: React.MouseEvent, text: string, message: string) => {
+  const handleCopy = async (e: React.MouseEvent, text: string, message: string, link?: string) => {
     e.preventDefault();
     e.stopPropagation();
     try {
+      // Copia il testo negli appunti
       await navigator.clipboard.writeText(text);
       setToastMessage(message);
       setShowToast(true);
+
+      // Se il contatto ha un link (telefono o email), aprilo
+      if (link) {
+        window.open(link, '_blank');
+      }
     } catch (err) {
       console.error('Failed to copy text: ', err);
     }
   };
+
   const { language } = useLanguage();
 
   const labels = {
@@ -45,7 +52,6 @@ const Contacts = () => {
       en: 'Monday - Friday: 8:00 - 12:30 / 13:30 - 17:00',
       it: 'Lunedì - Venerdì: 8:00 - 12:30 / 13:30 - 17:00'
     },
-
     weekend: {
       en: 'Saturday - Sunday: Closed',
       it: 'Sabato - Domenica: Chiuso'
@@ -60,7 +66,7 @@ const Contacts = () => {
         en: '035 048 2113',
         it: '035 048 2113'
       },
-      link: 'tel:0350482113',
+      link: 'tel:0350482113',  // Aggiungi il link per il telefono
       copyText: '035 048 2113',
       copyMessage: {
         en: 'Phone number copied',
@@ -74,7 +80,7 @@ const Contacts = () => {
         en: 'lmrmeccanica@gmail.com',
         it: 'lmrmeccanica@gmail.com'
       },
-      link: 'mailto:lmrmeccanica@gmail.com',
+      link: 'mailto:lmrmeccanica@gmail.com',  // Aggiungi il link per la mail
       copyText: 'lmrmeccanica@gmail.com',
       copyMessage: {
         en: 'Email copied',
@@ -88,7 +94,7 @@ const Contacts = () => {
         en: 'Via Crespi 24 Pradalunga (BG)',
         it: 'Via Crespi 24 Pradalunga (BG)'
       },
-      link: 'https://www.google.com/maps/place/Via+Crespi,+24,+24020+Pradalunga+BG/',
+      link: 'https://www.google.com/maps/place/Via+Crespi,+24,+24020+Pradalunga+BG/', // Link per la mappa
       copyText: 'Via Crespi 24, 24020 Pradalunga (BG)',
       copyMessage: {
         en: 'Address copied',
@@ -112,9 +118,8 @@ const Contacts = () => {
             return (
               <div
                 key={idx}
-                onClick={(e) => contact.copyText && handleCopy(e, contact.copyText, contact.copyMessage[language])}
-                className={`border border-white p-8 bg-black/20 hover:bg-black/40 transition-all group block cursor-pointer ${!isMap ? 'relative' : ''
-                  }`}
+                onClick={(e) => handleCopy(e, contact.copyText, contact.copyMessage[language], contact.link)}
+                className={`border border-white p-8 bg-black/20 hover:bg-black/40 transition-all group block cursor-pointer ${!isMap ? 'relative' : ''}`}
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 border border-white flex items-center justify-center group-hover:bg-white transition-colors">
