@@ -332,7 +332,7 @@ export const galleryItems = [
       en: 'Machine for precision turning operations on metals and other materials',
       it: 'Macchinario per lavorazioni di tornitura di precisione su metalli e altri materiali'
     },
-    immagine: 'img/tornio_parallelo.png'
+    immagine: 'img/tornio_parallelo.jpg'
   }
 ];
 
