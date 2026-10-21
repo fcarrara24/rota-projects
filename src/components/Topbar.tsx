@@ -13,6 +13,7 @@ const Topbar = () => {
     { label: { en: 'Strengths', it: 'Punti di Forza' }, href: '#strengths' },
     { label: { en: 'Materials', it: 'Materiali' }, href: '#materials' },
     { label: { en: 'Machinery', it: 'Macchinari' }, href: '#machinery' },
+    { label: { en: 'Certification', it: 'Certificazione' }, href: '#certification' },
     { label: { en: 'Contacts', it: 'Contatti' }, href: '#contacts' }
   ];
 

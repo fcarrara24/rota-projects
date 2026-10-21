@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import Strengths from './components/Strengths';
 import Materials from './components/Materials';
 import Machinery from './components/Machinery';
+import Certification from './components/Certification';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 
@@ -19,6 +20,7 @@ function App() {
         <Strengths />
         <Materials />
         <Machinery />
+        <Certification />
         <Contacts />
       </main>
       <Footer />
